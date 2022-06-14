@@ -27,7 +27,7 @@ app.use( require("./routes/auth"))
 app.use("/order" ,require("./routes/orders"))
 
 
-const PORT= 5000
+const PORT= process.env.PORT||5000
 
 //creating server
 app.listen(PORT,()=>{
